@@ -1,0 +1,16 @@
+name: Say Hello
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello:
+    name: Hello
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello to Me
+        uses: richin13/actions-playground@v1
+        with:
+            who-to-greet: "Ricardo"
